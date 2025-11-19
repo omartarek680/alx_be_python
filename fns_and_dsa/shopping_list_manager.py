@@ -12,15 +12,22 @@ def main():
         display_menu()
         choice = input("Enter your choice: ")
         if choice == "1":
-            # shopping_list.append()
+            item_name = input("Enter item to add: ")
+            shopping_list.append(item_name)
+            
             pass
         elif choice == "2":
-            # shopping_list.pop()
-            pass
+            item_name = input("Enter item to remove: ")
+            if item_name not in shopping_list:
+                print(f"{item_name} not found in the shopping list.")
+            else:
+                shopping_list.remove(item_name)
+            
         elif choice == "3":
-            # for item in shopping_list:
-            #     print(item)
-            pass    
+            for item in shopping_list:
+                print(f"- {item}")
+            
+                
         elif choice == "4":
             print("Goodbye!")
             break
