@@ -12,12 +12,12 @@ def main():
         display_menu()
         choice = input("Enter your choice: ")
         if choice == '1':
-            item_name = input("Enter item to add: ")
+            item_name = input("Enter the item to add: ")
             shopping_list.append(item_name)
             
             pass
         elif choice == '2':
-            item_name = input("Enter item to remove: ")
+            item_name = input("Enter the item to remove: ")
             if item_name not in shopping_list:
                 print(f"{item_name} not found in the shopping list.")
             else:
