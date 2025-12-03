@@ -20,8 +20,6 @@ class BankAccount:
     def display_balance(self):
         print(f"Current Balance: ${self.__account_balance}")
     
-    
-omar = BankAccount(100)
 
-print(omar.display_balance)           
+
         
